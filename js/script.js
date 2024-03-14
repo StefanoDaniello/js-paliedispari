@@ -49,19 +49,21 @@ if(userNumber > 5 || userNumber <=0){
     console.log('errore inserisci un numero valido tra 1 e 5!')
 }else{
     console.log(userNumber)
-    let result=oddOreven()
-    // console.log(result)
+    let result=userHasWon()
+    console.log(result)
 }
 
-function oddOreven(){
+function userHasWon(){
     let computerNumber = getRndInteger(1,5)
     console.log(computerNumber)
     let somma= userNumber+computerNumber
     console.log(somma)
     if(somma % 2 === 0 && userChoise % 2 === 0){
         console.log('hai vinto')
+        return true
     }else{
         console.log('hai perso')
+        return false
     }
 }
 
