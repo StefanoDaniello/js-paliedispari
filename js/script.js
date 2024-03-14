@@ -26,14 +26,14 @@ function palindroma(){
     console.log(splitWord)
     splitWord=splitWord.reverse();
     console.log(splitWord)
-    if(userWord == splitWord){
+    let reversWord = splitWord.join('')
+    console.log(reversWord)
+    if(userWord == reversWord){
         return true
     }else{
         return false
     }
 }
-
-
 
 
 /*
