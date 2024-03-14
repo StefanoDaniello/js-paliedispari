@@ -43,13 +43,14 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 :githubparrot: :githubparrot:  Buon lavoro e buon divertimento!  :githubparrot: :githubparrot:
 */
 
-
+let userChoise = prompt('scegli pari o dispari')
 let userNumber = parseInt(prompt('inserisci un numero compreso tra 1 e 5!'))
 if(userNumber > 5 || userNumber <=0){
     console.log('errore inserisci un numero valido tra 1 e 5!')
 }else{
     console.log(userNumber)
     let result=oddOreven()
+    // console.log(result)
 }
 
 
@@ -59,10 +60,10 @@ function oddOreven(){
     console.log(computerNumber)
     let somma= userNumber+computerNumber
     console.log(somma)
-    if(somma % 2 === 0){
-        console.log('pari')
+    if(somma % 2 === 0 && userChoise % 2 === 0){
+        console.log('hai vinto')
     }else{
-        console.log('dispari')
+        console.log('hai perso')
     }
 }
 
