@@ -53,8 +53,6 @@ if(userNumber > 5 || userNumber <=0){
     // console.log(result)
 }
 
-
-
 function oddOreven(){
     let computerNumber = getRndInteger(1,5)
     console.log(computerNumber)
@@ -66,16 +64,6 @@ function oddOreven(){
         console.log('hai perso')
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
