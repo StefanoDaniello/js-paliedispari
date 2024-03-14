@@ -5,28 +5,34 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 */
 
-/*
+
 let userWord=prompt('inserisci una parola')
 console.log(userWord)
+if(!isNaN(userWord)){
+    console.log('errore inserisci una parola!')
+}else{
+    const result=palindroma()
+    console.log(result)
+    if(result){
+        console.log('la parola è palindroma')
+    }else{
+        console.log('la parola non è palindroma')
+    }
+}
+
 
 function palindroma(){
-    if(isNaN(userWord)){
-        let splitWord= userWord.split('');
-        console.log(splitWord)
-        splitWord=splitWord.reverse();
-        console.log(splitWord)
-        if(userWord === splitWord){
-            console.log('laparola è palindroma')
-        }else{
-            console.log('la parola non è palindroma')
-        }
+    let splitWord= userWord.split('');
+    console.log(splitWord)
+    splitWord=splitWord.reverse();
+    console.log(splitWord)
+    if(userWord == splitWord){
+        return true
     }else{
-        console.log('errore scrivi una parola!')
+        return false
     }
-
 }
-const result=palindroma()
-*/
+
 
 
 
@@ -43,14 +49,19 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 :githubparrot: :githubparrot:  Buon lavoro e buon divertimento!  :githubparrot: :githubparrot:
 */
 
+/*
 let userChoise = prompt('scegli pari o dispari')
 let userNumber = parseInt(prompt('inserisci un numero compreso tra 1 e 5!'))
-if(userNumber > 5 || userNumber <=0){
+if(userNumber > 5 || userNumber <=0 || iaNaN(userNumber)){
     console.log('errore inserisci un numero valido tra 1 e 5!')
 }else{
     console.log(userNumber)
     let result=userHasWon()
-    console.log(result)
+    if(result){
+        console.log('hai vinto')
+    }else{
+        console.log('hai perso')
+    }
 }
 
 function userHasWon(){
@@ -59,10 +70,8 @@ function userHasWon(){
     let somma= userNumber+computerNumber
     console.log(somma)
     if(somma % 2 === 0 && userChoise % 2 === 0){
-        console.log('hai vinto')
         return true
     }else{
-        console.log('hai perso')
         return false
     }
 }
@@ -70,3 +79,4 @@ function userHasWon(){
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+*/
